@@ -3,7 +3,7 @@ function Header() {
   return (
     <>
       <header>
-        <h5>React</h5>
+        <h1>Village Dictionary</h1>
       </header>
     </>
   )

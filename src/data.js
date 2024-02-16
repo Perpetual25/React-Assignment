@@ -25,6 +25,20 @@
         title: 'Talk to you Later'   
     },
 
+    {
+        id:4,
+        name:'ICYMI',
+        title: 'Incase You Missed It'   
+    },
+
+    {
+        id:5,
+        name:'JSYK',
+        title: 'Just So You Know.'   
+    },
+
+
+
 
     
 
