@@ -9,7 +9,6 @@ function App() {
       <Header />
       <div className='input'>
       <Input />
-
       </div>
       <div className='cards'>
         <Card name={data[0].name} title={data[0].title} />
