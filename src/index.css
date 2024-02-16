@@ -1,15 +1,15 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: #f1f1f1;
 }
 
-Header{
+Header {
   width: 80%;
   font-weight: bold;
   font-size: 50px;
@@ -19,12 +19,12 @@ Header{
   margin: 20px auto 90px;
 }
 
-header h5{
+header h5 {
   font-size: 35px;
   text-align: center;
 }
 
-.container{
+.container {
   /* border: 2px solid black; */
   width: 400px;
   height: 200px;
@@ -33,59 +33,93 @@ header h5{
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #ccc;
-
 }
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.container h1{
+.container h1 {
   text-align: center;
   margin: 5px 0 10px;
   padding: 15px;
 }
 
-.container h5{
+.container h5 {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
 }
 
-.input{
+.input {
   display: flex;
   margin-bottom: 20px;
   margin-left: 20px;
-  
 }
 
-.general{
+.general {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
 
-.empty-box{
+.empty-box {
   width: 400px;
   height: 40px;
-
 }
 
-.search-words{
+.search-words {
   height: 40px;
   width: 150px;
   padding-left: 20px;
   margin-right: 90px;
-
 }
 
-.new-words{
+.new-words {
   height: 40px;
   width: 180px;
   margin-left: 25rem;
   padding-left: 20px;
+}
 
-  
-
-
+@media screen and (max-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    width: 300px;
+  }
+  Header {
+    width: 40%;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    height: 50px;
+    padding: 10px 0;
+    margin: 20px auto 90px;
+  }
+  .general {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .empty-box {
+    width: 200px;
+    height: 40px;
+  }
+  .search-words {
+    height: 40px;
+    width: 110px;
+    padding-left: 5px;
+    margin-right: 0;
+  }
+  .new-words {
+    height: 40px;
+    width: 180px;
+    margin-left: 120px;
+    padding-left: 20px;
+  }
+  body {
+    width: fit-content;
+  }
 }
